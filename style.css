@@ -1,0 +1,55 @@
+body {
+    background-color: smokey-white;
+    font-family: Arial;
+}
+
+video {
+    display: block;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+img {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.temp {
+    width: 75%;
+    margin: auto;
+}
+
+h1, h2 {
+    position: relative;;
+    right: 10%;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+}
+.header h1 {
+    margin-bottom: 0px;
+}
+.header a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+  color: hotpink;
+}
+
+li {
+    list-style-type: square;
+}
+b {
+    font-size: 15px;
+}
+ul {
+    list-style-position: outside;
+    padding:0px;
+}
+
+
+
