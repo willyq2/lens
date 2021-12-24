@@ -28,6 +28,7 @@ h1, h2 {
 .header {
     position: sticky;
     top: 0px;
+    margin-bottom: 10px;
 }
 .header h1 {
     margin-bottom: 0px;
