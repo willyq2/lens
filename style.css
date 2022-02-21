@@ -45,6 +45,7 @@ h1, h2 {
     top: 0px;
     margin-bottom: 10px;
     z-index: 2;
+    background: white;
 }
 .header h1 {
     margin-bottom: 0px;
