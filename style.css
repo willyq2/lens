@@ -7,12 +7,18 @@ body {
     border: 1px solid;
     padding: 0px;
 }
+.about {
+    color: rgba(255, 0, 0, .5);
+    position: relative;
+    width: 300px;
+    height: 201px;
+}
 
 video {
     display: inline-block;
     width: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -33,9 +39,13 @@ img {
     width: 75%;
     margin: auto;
 }
+.temp2 {
+    width: 90%;
+    margin: auto;
+}
 
 h1, h2 {
-    position: relative;;
+    position: relative;
     right: 10%;
 }
 
