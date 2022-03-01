@@ -8,44 +8,55 @@
 <body class="temp">
 
     <div class="header">
-        <a href="index.html"><h1 class="boxed">William Webster</h1></a>
+        <a href="index.html"><h1>William Webster</h1></a>
 
         <div class="navigation">
-            <a href="index.html">about</a>
-            <a class="boxed" href="video.html">video</a>
-            <a href="portrait.html">portrait</a>
-            <a href="digital.html">digital</a>
-            <a href="35mm.html">35mm</a>
+            <div class="navbar"><a href="index.html">about</a></div>
+            <div class="navbar"><q><a href="video.html">video</a></q></div>
+            <div class="navbar"><a href="portrait.html">portrait</a></div>
+            <div class="navbar"><a href="digital.html">digital</a></div>
+            <div class="navbar"><a href="35mm.html">35mm</a></div>
         </div>
     </div>
 
         <video style="margin-top: 0px;" poster="/posters/wack.jpg" controls>
             <source src="https://www.dropbox.com/s/6ueuiyibf2x72fk/imposter%20%281080p%29.mp4?raw=1">
         </video>
+        <div class="description">
+            <p><b>A WACK production</b> A short experimental documentary about Imposter Syndrome.</p>
+        </div>
 
         <video poster="/posters/poster.jpg" controls>
             <source src="https://www.dropbox.com/s/0jzydh4p0imnldj/ariellestinson.mov?raw=1">
         </video>
 
-        <video poster="/posters/poster2.jpg" controls>
-            <source src="https://www.dropbox.com/s/cak5omz0thswzoh/box.m4v?raw=1">
-        </video>
 
         <video poster="/posters/libby.jpg" controls>
             <source src="https://www.dropbox.com/s/b9dxyz0b3nky89z/OaklandProtest%28june1%29.m4v?raw=1">
+        </video>
+        <div class="description">
+            <p><b>In collaboration with Samuel Getachew</b> "Oakland spends over 40% of its budget on policing. Libby Schaaf and OPD tear-gassed peaceful protestors and released statements full of lies. We need to defund the oakland police."</p>
+        </div>
+
+        <video poster="/posters/poster3.jpg" controls>
+            <source src="https://www.dropbox.com/s/2f5aqa657ztf5wf/superbPumpkin.m4v?raw=1">
         </video>
 
         <video poster="/posters/summer.jpg" controls>
             <source src="https://www.dropbox.com/s/7f0gzt1wzw0t2w9/summer%20team%202%20-%202019.m4v?raw=1">
         </video>
 
-        <video poster="/posters/poster3.jpg" controls>
-            <source src="https://www.dropbox.com/s/2f5aqa657ztf5wf/superbPumpkin.m4v?raw=1">
-        </video>
-
-        <video poster="/posters/ruf.jpg" controls>
-            <source src="https://www.dropbox.com/s/6avdo7a8kimuz8c/RUF.m4v?raw=1">
-        </video>
-
 </body>
+<style>
+q::before {
+    background-color: rgb(0, 255, 0, .25);
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: 30%;
+    right: 5%;
+    z-index: -1;
+    }
+</style>
 </html>

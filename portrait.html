@@ -8,14 +8,14 @@
 <body class="temp">
 
     <div class="header">
-        <a href="index.html"><h1 class="boxed">William Webster</h1></a>
+        <a href="index.html"><h1>William Webster</h1></a>
 
         <div class="navigation">
-            <a href="index.html">about</a>
-            <a href="video.html">video</a>
-            <a class="boxed" href="portrait.html">portrait</a>
-            <a href="digital.html">digital</a>
-            <a href="35mm.html">35mm</a>
+            <div class="navbar"><a href="index.html">about</a></div>
+            <div class="navbar"><a href="video.html">video</a></div>
+            <div class="navbar"><q><a href="portrait.html">portrait</a></q></div>
+            <div class="navbar"><a href="digital.html">digital</a></div>
+            <div class="navbar"><a href="35mm.html">35mm</a></div>
         </div>
     </div>
 
@@ -56,4 +56,15 @@
     <script src="animations.js"></script>
 
 </body>
+<style>
+q::before {
+    background-color: rgb(255, 0, 255, .25);
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 90%;
+    right: 1%;
+    z-index: -1;
+    }
+</style>
 </html>
