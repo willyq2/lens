@@ -34,7 +34,7 @@ img {
     margin: auto;
     }
 
-h1, h2 {
+h1 {
     position: relative;
     right: 10%;
     }
@@ -101,7 +101,7 @@ ul {
     }
 
 h1::before {
-    background-color: rgb(0, 0, 255, .25);
+    background-color: rgb(0, 255, 255, .3);
     content: "";
     position: absolute;
     width: 100%;
@@ -116,7 +116,7 @@ h1::before {
     position: relative;
     }
 .headers {
-    margin-right: 2%;
     position: relative;
+    right: 10%;
     }
 }
