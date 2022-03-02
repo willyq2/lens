@@ -50,7 +50,7 @@ h1 {
     margin-bottom: 0px;
     }
 .header a {
-    color: black;
+    color: rgb(0, 0, 0, .8);
     text-decoration: none;
     margin-right: 2%;
     font-weight: normal;
@@ -67,6 +67,9 @@ ul {
     list-style-position: outside;
     padding:0px;
     }
+b {
+    color: rgb(0, 0, 0, .8);
+}
 
 .navigation {
     margin-top: 0px;
