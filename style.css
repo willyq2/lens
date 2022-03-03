@@ -1,5 +1,5 @@
 body {
-    background-color: smokey-white;
+    background-color: smoky-white;
     font-family: acumin-pro, sans-serif;
     font-weight: 100;
     }
@@ -28,10 +28,7 @@ img {
 .temp {
     width: 75%;
     margin: auto;
-    }
-.temp2 {
-    width: 90%;
-    margin: auto;
+    margin-bottom: 50px;
     }
 
 h1 {
@@ -62,12 +59,14 @@ a:hover {
 li {
     list-style-type: square;
     font-weight: 100;
+    margin: 5px;
     }
 ul {
     list-style-position: outside;
     padding:0px;
     }
 b {
+    font-size: 17px;
     color: rgb(0, 0, 0, .8);
 }
 
@@ -109,9 +108,9 @@ h1::before {
     position: absolute;
     width: 100%;
     height: 115%;
-    top:  -10%;
+    top:  -5%;
     right: 10%;
-    z-index: -1;
+    z-index: -2;
     }
 .navbar {
     float: left;
