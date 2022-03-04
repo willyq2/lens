@@ -59,7 +59,7 @@ a:hover {
 li {
     list-style-type: square;
     font-weight: 100;
-    margin: 5px;
+    margin-bottom: 5px;
     }
 ul {
     list-style-position: outside;
