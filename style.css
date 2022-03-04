@@ -34,6 +34,7 @@ img {
 h1 {
     position: relative;
     right: 10%;
+    color: black;
     }
 
 .header {
@@ -55,6 +56,9 @@ h1 {
 a:hover {
   color: hotpink;
     }
+h1:hover {
+    color: hotpink;
+}
 
 li {
     list-style-type: square;
