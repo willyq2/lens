@@ -9,6 +9,10 @@ function enlarge(myImg) {
     captionText.innerHTML = this.id;
 }
 
-modalImg.onclick = function() {
+function dropdown() {
+    modal.style.display = "flex";
+}
+
+modal.onclick = function() {
     modal.style.display = "none";
 }

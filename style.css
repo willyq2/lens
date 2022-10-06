@@ -54,7 +54,7 @@ h1 {
     font-weight: normal;
     }
 a:hover {
-  color: hotpink;
+    color: hotpink;
     }
 h1:hover {
     color: hotpink;
@@ -125,4 +125,20 @@ h1::before {
     position: relative;
     right: 10%;
     }
+
+.menu {
+    display: none;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+   .menu {
+   display: block;
+   }
+
+   .navbar {
+   display: none;
+   }
 }
