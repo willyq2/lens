@@ -1,0 +1,132 @@
+body {
+    font-family: helvetica, sans-serif;
+}
+
+p, h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    cursor:pointer;
+}
+.nav a {
+    padding: 0 8px;
+}
+
+
+.body {
+    width: 100%;
+    margin: auto;
+}
+.nav {
+    display: none;
+}
+.head {
+    position: sticky;
+    top: 0px;
+    margin: 25px 0;
+    padding-top: 8px;
+}
+.name {
+    background-color: white;
+    color: black;
+}
+.dropdown {
+    float: right;
+    background-color: black;
+    color: white;
+}
+img {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+video {
+    width: 100%;
+}
+.description {
+    margin: 8px 0 32px 0;
+}
+
+/*
+viewport height is less than viewport width.
+*/
+@media all and (max-height: 100vw) {
+    .body {
+        width: 75%;
+    }
+    .nav {
+        display: block;
+    }
+    .head {
+        text-align: center;
+        background-color: white;
+    }
+    .dropdown {
+        display: none;
+    }
+
+    #full_page_nav {
+        display: none !important;
+    }
+
+    img {
+        margin-bottom: 16px;
+    }
+    .two img {
+        width: 49.5%;
+    }
+    .three img {
+        width: 33%;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/*
+Full page navigation overlay and content.
+*/
+#full_page_nav {
+    display: none;
+}
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+.closebtn {
+    position: fixed;
+    margin: 0;
+    top: 25px;
+    right: 25px;
+    font-size: 50px;
+}
+.overlay_nav {
+    height: 75%;
+    margin-top: 10%;
+}
+.overlay_nav a {
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.closebtn:hover {
+    cursor:pointer;
+}
