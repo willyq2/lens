@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - William Webster</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="Description" CONTENT="Photos and video by William Webster.">
+    <meta name="author" content="William Webster">
+    <title>Portrait - William Webster</title>
+    <link rel="stylesheet" href="images.css">
+    <script src="testing.js"></script>
 </head>
-<body class="temp">
 
-    <div class="header">
-        <a href="index.html"><h1>William Webster</h1></a>
+<body>
+    <div class="head">
+        <a class="name" href="testing.html"><h1>William Webster</h1></a>
 
-        <div class="navigation">
-            <div class="navbar"><a href="index.html">about</a></div>
-            <div class="navbar"><a href="video.html">video</a></div>
-            <div class="navbar"><q><a href="portrait.html">portrait</a></q></div>
-            <div class="navbar"><a href="digital.html">digital</a></div>
-            <div class="navbar"><a href="35mm.html">35mm</a></div>
+        <a class="dropdown" onclick="openNav()"><h1>dropdown</h1></a>
+
+        <div class="nav">
+            <a href="index.html">about</a>
+            <a href="video.html">video</a>
+            <a href="portrait.html">portrait</a>
+            <a href="live.html">live</a>
+            <a href="35mm.html">35mm</a>
         </div>
     </div>
 
-    <div class="temp">
-        <img onclick="enlarge(this.id)" style="margin-top: 0px;" src="/images/portrait/sammy.jpg" id="sammy">
+    <div class="body">
+        <div class="flex two">
+            <img src="/images/wack gallery/heide.jpg">
+            <img src="/images/wack gallery/julian.jpg">
+        </div>
+        <div class="flex two">
+            <img src="/images/wack gallery/filo.jpg">
+            <img src="/images/wack gallery/addie.jpg">
+        </div>
+        <img src="/images/wack gallery/spencer.jpg">
 
-        <div class="two">
-            <img onclick="enlarge(this.id)" src="/images/portrait/langston.jpg" id="langston">
+        <img src="/images/portrait/sammy.jpg">
 
-            <img onclick="enlarge(this.id)" style="float: right;" src="/images/portrait/arielle.jpg" id="arielle">
+        <div class="flex two">
+            <img src="/images/portrait/langston.jpg" id="langston">
+            <img src="/images/portrait/arielle.jpg">
         </div>
 
-        <img onclick="enlarge(this.id)" src="/images/portrait/lucy.jpg" id="lucy">
+        <img src="/images/portrait/lucy.jpg" id="lucy">
 
-        <div class="two">
-            <img onclick="enlarge(this.id)" style="float: right;" src="/images/portrait/laying.jpg" id="laying">
-
-            <img onclick="enlarge(this.id)" src="/images/portrait/shadow.jpg" id="shadow">
+        <div class="flex two">
+            <img src="/images/portrait/laying.jpg">
+            <img src="/images/portrait/shadow.jpg">
         </div>
 
-        <img onclick="enlarge(this.id)" src="/images/portrait/sammy33.jpg" id="sammy3">
+        <img src="/images/portrait/sammy33.jpg">
     </div>
 
-    <div id="myModal" class="modal">
-        <img class="modal-content" id="img">
+    <div id="full_page_nav" class="overlay">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay_nav">
+            <a href="index.html"><h1>about</h1></a>
+            <a href="video.html"><h1>video</h1></a>
+            <a onclick="closeNav()"><h1>portrait</h1></a>
+            <a href="live.html"><h1>live</h1></a>
+            <a href="35mm.html"><h1>35mm</h1></a>
+        </div>
     </div>
-
-    <script src="animations.js"></script>
-
 </body>
-<style>
-q::before {
-    background-color: rgb(255, 0, 255, .2);
-    content: "";
-    position: absolute;
-    width: 75px;
-    height: 100%;
-    right: -10%;
-    bottom: 5%;
-    z-index: -1;
-    }
-</style>
 </html>

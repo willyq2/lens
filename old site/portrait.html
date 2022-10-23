@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - William Webster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="temp">
+
+    <div class="header">
+        <a href="index.html"><h1>William Webster</h1></a>
+
+        <div class="navigation">
+            <div class="navbar"><a href="index.html">about</a></div>
+            <div class="navbar"><a href="video.html">video</a></div>
+            <div class="navbar"><q><a href="portrait.html">portrait</a></q></div>
+            <div class="navbar"><a href="digital.html">digital</a></div>
+            <div class="navbar"><a href="35mm.html">35mm</a></div>
+        </div>
+    </div>
+
+    <div class="temp">
+        <img onclick="enlarge(this.id)" style="margin-top: 0px;" src="/images/portrait/sammy.jpg" id="sammy">
+
+        <div class="two">
+            <img onclick="enlarge(this.id)" src="/images/portrait/langston.jpg" id="langston">
+
+            <img onclick="enlarge(this.id)" style="float: right;" src="/images/portrait/arielle.jpg" id="arielle">
+        </div>
+
+        <img onclick="enlarge(this.id)" src="/images/portrait/lucy.jpg" id="lucy">
+
+        <div class="two">
+            <img onclick="enlarge(this.id)" style="float: right;" src="/images/portrait/laying.jpg" id="laying">
+
+            <img onclick="enlarge(this.id)" src="/images/portrait/shadow.jpg" id="shadow">
+        </div>
+
+        <img onclick="enlarge(this.id)" src="/images/portrait/sammy33.jpg" id="sammy3">
+    </div>
+
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img">
+    </div>
+
+    <script src="animations.js"></script>
+
+</body>
+<style>
+q::before {
+    background-color: rgb(255, 0, 255, .2);
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 100%;
+    right: -10%;
+    bottom: 5%;
+    z-index: -1;
+    }
+</style>
+</html>
