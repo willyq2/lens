@@ -3,7 +3,7 @@ body {
     background-color: white;
 }
 
-p, h1 {
+p {
     margin: 0;
 }
 
@@ -32,10 +32,6 @@ a:hover {
     text-align: left;
     margin-bottom: 16px;
 }
-.about a {
-    text-decoration: underline;
-    font-weight: bold;
-}
 .nav {
     display: none;
 }
@@ -48,8 +44,9 @@ a:hover {
     margin: 25px 0;
     padding-top: 8px;
 }
-.head img {
-    width: 20%;
+.head h2 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 .name {
     background-color: white;
@@ -86,6 +83,10 @@ viewport height is less than viewport width.
         text-align: center;
         background-color: white;
     }
+    .head h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
     .dropdown {
         display: none;
     }
@@ -116,7 +117,7 @@ Full page navigation overlay and content.
     margin: 0;
     top: 25px;
     right: 25px;
-    font-size: 50px;
+    font-size: 75px;
 }
 .overlay_nav {
     height: 75%;
