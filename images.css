@@ -3,7 +3,6 @@ body {
 }
 
 p, h1 {
-    display: inline-block;
     margin: 0;
 }
 
@@ -34,9 +33,14 @@ a:hover {
     margin: 25px 0;
     padding-top: 8px;
 }
+.head h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
 .name {
     background-color: white;
     color: black;
+    margin-bottom: 0;
 }
 .dropdown {
     float: right;
@@ -69,6 +73,13 @@ viewport height is less than viewport width.
     .head {
         text-align: center;
         background-color: white;
+    }
+    .head h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .name {
+        margin-bottom: 4px;
     }
     .dropdown {
         display: none;
@@ -115,10 +126,10 @@ Full page navigation overlay and content.
     margin: 0;
     top: 25px;
     right: 25px;
-    font-size: 75px;
+    font-size: 4rem;
 }
 .overlay_nav {
-    height: 75%;
+    height: 80%;
     margin-top: 10%;
 }
 .overlay_nav a {
