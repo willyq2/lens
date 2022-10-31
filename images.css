@@ -15,40 +15,37 @@ a:hover {
     color: blue;
     cursor:pointer;
 }
-.nav a {
-    padding: 0 8px;
-}
-
 
 .body {
     width: 100%;
     margin: auto;
 }
+
+
 .nav {
     display: none;
 }
 .head {
     position: sticky;
     top: 0px;
-    margin: 25px 0;
     padding-top: 8px;
+    margin: 16px 0;
 }
 .head h1 {
-    margin: 0;
     font-size: 1.5rem;
 }
 .name {
     background-color: white;
     color: black;
-    margin-bottom: 0;
 }
 .dropdown {
     float: right;
     background-color: black;
     color: white;
 }
+
 img {
-    display: inline-block;
+    display: block;
     width: 100%;
     margin-bottom: 8px;
 }
@@ -70,12 +67,15 @@ viewport height is less than viewport width.
     .nav {
         display: block;
     }
+    .nav a {
+        padding: 0 8px;
+     }
     .head {
         text-align: center;
+        margin: 32px 0;
         background-color: white;
     }
     .head h1 {
-        margin: 0;
         font-size: 2rem;
     }
     .name {
@@ -90,7 +90,8 @@ viewport height is less than viewport width.
     }
 
     img {
-        margin-bottom: 16px;
+        display: inline-block;
+        margin: 0;
     }
     .two img {
         width: 49.5%;
@@ -102,6 +103,12 @@ viewport height is less than viewport width.
     .flex {
         display: flex;
         justify-content: space-between;
+    }
+    .group {
+        margin-bottom: 8px;
+    }
+    .ungroup {
+        margin-bottom: 32px;
     }
 }
 
