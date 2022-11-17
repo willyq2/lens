@@ -86,7 +86,7 @@ viewport height is less than viewport width.
         background-color: white;
     }
     .head h1 {
-        width: 100%;
+        font-size: 2rem;
     }
     .name {
         margin-bottom: 4px;
