@@ -68,8 +68,20 @@ video {
     margin: 8px 0 32px 0;
 }
 
+.test h1 {
+    display: inline-block;
+}
 .test {
-    display: none;
+    display: inline-flex;
+    margin-right: 32px;
+    justify-content: space-between;
+
+    flex: 1;
+}
+
+.test-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*
@@ -137,6 +149,7 @@ viewport height is less than viewport width.
     .test {
         display: flex;
         justify-content: space-between;
+        margin-right: 0;
     }
 }
 

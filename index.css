@@ -49,6 +49,7 @@ a:hover {
 .nav {
     display: none;
 }
+
 .head {
     position: sticky;
     top: 0px;
@@ -69,8 +70,20 @@ a:hover {
     color: white;
 }
 
+.test h1 {
+    display: inline-block;
+}
 .test {
-    display: none;
+    display: inline-flex;
+    margin-right: 32px;
+    justify-content: space-between;
+
+    flex: 1;
+}
+
+.test-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*
@@ -122,16 +135,13 @@ viewport height is less than viewport width.
         display: none !important;
     }
 
-
-    .name {
-        display: none;
-    }
     .test h1 {
-            display: inline-block;
+        display: inline-block;
     }
     .test {
         display: flex;
         justify-content: space-between;
+        margin-right: 0;
     }
 }
 
@@ -161,6 +171,7 @@ Full page navigation overlay and content.
 .overlay_nav {
     height: 80%;
     margin-top: 10%;
+    font-family: bold;
 }
 .overlay_nav a {
     display: flex;
