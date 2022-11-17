@@ -98,7 +98,7 @@ viewport height is less than viewport width.
     }
     .head h1 {
         font-family: bold;
-        font-size: 3rem;
+        font-size: 3em;
     }
     .name {
         margin-bottom: 4px;
