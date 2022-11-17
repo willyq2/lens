@@ -68,6 +68,10 @@ video {
     margin: 8px 0 32px 0;
 }
 
+.test {
+    display: none;
+}
+
 /*
 viewport height is less than viewport width.
 */
@@ -76,14 +80,14 @@ viewport height is less than viewport width.
         width: 75%;
     }
     .nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
-    .nav a {
-        padding: 0 18px;
-     }
+
     .head {
+        width: 75%;
         text-align: center;
-        margin: 32px 0;
+        margin: 32px auto;
         background-color: white;
     }
     .head h1 {
@@ -121,6 +125,18 @@ viewport height is less than viewport width.
     }
     .ungroup {
         margin-bottom: 32px;
+    }
+
+
+    .name {
+        display: none;
+    }
+    .test h1 {
+        display: inline-block;
+    }
+    .test {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
