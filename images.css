@@ -1,5 +1,15 @@
 body {
-    font-family: arial, sans-serif;
+    font-family: helvetica;
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url(/fonts/Helvetica.woff2);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(/fonts/Helvetica-Bold.woff2);
 }
 
 p, h1 {
@@ -32,6 +42,7 @@ a:hover {
     margin: 16px 0;
 }
 .head h1 {
+    font-family: bold;
     font-size: 1.5rem;
 }
 .name {
@@ -68,7 +79,7 @@ viewport height is less than viewport width.
         display: block;
     }
     .nav a {
-        padding: 0 8px;
+        padding: 0 18px;
      }
     .head {
         text-align: center;
@@ -76,7 +87,8 @@ viewport height is less than viewport width.
         background-color: white;
     }
     .head h1 {
-        font-size: 2rem;
+        font-family: bold;
+        font-size: 3rem;
     }
     .name {
         margin-bottom: 4px;
