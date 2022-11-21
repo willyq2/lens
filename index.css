@@ -1,15 +1,16 @@
 body {
-    font-family: helvetica;
+    font-family: font;
+    background-color: rgb(230, 230, 230);
 }
 
 @font-face {
-  font-family: helvetica;
-  src: url(/fonts/Helvetica.woff2);
+  font-family: font;
+  src: url(/fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
   font-family: bold;
-  src: url(/fonts/Helvetica-Bold.woff2);
+  src: url(/fonts/Roboto-Bold.ttf);
 }
 
 p, h1 {
@@ -21,28 +22,30 @@ h2 {
 }
 
 a {
-    display: inline-block;
     color: black;
     text-decoration: none;
 }
 a:hover {
-    color: blue;
+    color: white;
     cursor: pointer;
 }
 
 .body {
     text-align: center;
+    margin: auto;
+    overflow: hidden;
     width: 100%;
 }
+
 
 
 .indexImg {
-    display: inline-block;
+    display: block;
     width: 100%;
+    margin-bottom: 0;
 }
 .about {
     display: inline-block;
-    width: 90%;
     text-align: left;
     margin-bottom: 16px;
 }
@@ -53,37 +56,20 @@ a:hover {
 .head {
     position: sticky;
     top: 0px;
-    padding-top: 8px;
+    z-index: 1;
+
+    padding-top: 0px;
     margin: 16px 0;
 }
 .head h1 {
     font-family: bold;
     font-size: 1.5rem;
-}
-.name {
-    background-color: white;
-    color: black;
+    display: inline-block;
 }
 .dropdown {
     float: right;
     background-color: black;
-    color: white;
-}
-
-.test h1 {
-    display: inline-block;
-}
-.test {
-    display: inline-flex;
-    margin-right: 32px;
-    justify-content: space-between;
-
-    flex: 1;
-}
-
-.test-flex {
-    display: flex;
-    justify-content: space-between;
+    color: rgb(230, 230, 230);
 }
 
 /*
@@ -91,18 +77,18 @@ viewport height is less than viewport width.
 */
 @media all and (max-height: 100vw) {
     .body {
-        width: 75%;
-        margin: 32px auto;
+        position: relative;
+        bottom: 50px;
     }
 
    .indexImg {
         width: 50%;
-        max-width: 450px;
         float: left;
+        margin-bottom: 16px;
     }
     .about {
         display: inline-block;
-        width: 30%;
+        width: 40%;
         text-align: right;
         vertical-align: top;
         float: right;
@@ -115,33 +101,21 @@ viewport height is less than viewport width.
     }
 
     .head {
-        width: 75%;
-        text-align: center;
-        margin: 32px auto;
-        background-color: white;
+        width: 100%;
+        margin: 8px auto, 16px, auto;
     }
     .head h1 {
         font-family: bold;
-        font-size: 3em;
+        font-size: 5em;
+        display: block;
     }
-    .name {
-        margin-bottom: 4px;
-    }
+
     .dropdown {
         display: none;
     }
 
     #full_page_nav {
         display: none !important;
-    }
-
-    .test h1 {
-        display: inline-block;
-    }
-    .test {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 0;
     }
 }
 
@@ -158,8 +132,8 @@ Full page navigation overlay and content.
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
-    background-color: white;
+    z-index: 2;
+    background-color: rgb(230, 230, 230);
 }
 .closebtn {
     position: fixed;
@@ -178,4 +152,10 @@ Full page navigation overlay and content.
     height: 20%;
     align-items: center;
     justify-content: center;
+}
+
+
+.outline {
+    border-style: solid;
+    border-width: 1px;
 }

@@ -1,15 +1,16 @@
 body {
-    font-family: helvetica;
+    font-family: font;
+    background-color: rgb(230, 230, 230);
 }
 
 @font-face {
-  font-family: helvetica;
-  src: url(/fonts/Helvetica.woff2);
+  font-family: font;
+  src: url(/fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
   font-family: bold;
-  src: url(/fonts/Helvetica-Bold.woff2);
+  src: url(/fonts/Roboto-Bold.ttf);
 }
 
 p, h1 {
@@ -17,12 +18,11 @@ p, h1 {
 }
 
 a {
-    display: inline-block;
     color: black;
     text-decoration: none;
 }
 a:hover {
-    color: blue;
+    color: white;
     cursor:pointer;
 }
 
@@ -38,21 +38,20 @@ a:hover {
 .head {
     position: sticky;
     top: 0px;
-    padding-top: 8px;
+
+    padding-top: 0px;
     margin: 16px 0;
+    z-index: 1;
 }
 .head h1 {
     font-family: bold;
     font-size: 1.5rem;
-}
-.name {
-    background-color: white;
-    color: black;
+    display: inline-block;
 }
 .dropdown {
     float: right;
     background-color: black;
-    color: white;
+    color: rgb(230, 230, 230);
 }
 
 img {
@@ -68,28 +67,14 @@ video {
     margin: 8px 0 32px 0;
 }
 
-.test h1 {
-    display: inline-block;
-}
-.test {
-    display: inline-flex;
-    margin-right: 32px;
-    justify-content: space-between;
-
-    flex: 1;
-}
-
-.test-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
 /*
 viewport height is less than viewport width.
 */
 @media all and (max-height: 100vw) {
     .body {
         width: 75%;
+        position: relative;
+        bottom: 50px;
     }
     .nav {
         display: flex;
@@ -97,18 +82,15 @@ viewport height is less than viewport width.
     }
 
     .head {
-        width: 75%;
-        text-align: center;
-        margin: 32px auto;
-        background-color: white;
+            width: 100%;
+            margin: 8px auto, 16px, auto;
     }
     .head h1 {
         font-family: bold;
-        font-size: 3rem;
+        font-size: 5em;
+        display: block;
     }
-    .name {
-        margin-bottom: 4px;
-    }
+
     .dropdown {
         display: none;
     }
@@ -138,19 +120,6 @@ viewport height is less than viewport width.
     .ungroup {
         margin-bottom: 32px;
     }
-
-
-    .name {
-        display: none;
-    }
-    .test h1 {
-        display: inline-block;
-    }
-    .test {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 0;
-    }
 }
 
 
@@ -166,8 +135,8 @@ Full page navigation overlay and content.
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
-    background-color: white;
+    z-index: 2;
+    background-color: rgb(230, 230, 230);
 }
 .closebtn {
     position: fixed;
@@ -188,4 +157,14 @@ Full page navigation overlay and content.
 }
 .closebtn:hover {
     cursor:pointer;
+}
+
+.outline {
+    border-style: solid;
+    border-width: 1px;
+}
+.outline-w {
+    border-style: solid;
+    border-width: 1px;
+    color: white;
 }
