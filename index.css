@@ -47,7 +47,7 @@ a:hover {
 .about {
     display: inline-block;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 .nav {
     display: none;
@@ -66,6 +66,11 @@ a:hover {
     font-size: 1.5rem;
     display: inline-block;
 }
+.foot {
+    float: right;
+    margin: 8px 0;
+}
+
 .dropdown {
     float: right;
     background-color: black;

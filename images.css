@@ -48,6 +48,12 @@ a:hover {
     font-size: 1.5rem;
     display: inline-block;
 }
+.foot {
+    float: right;
+    margin: 8px 0;
+}
+
+
 .dropdown {
     float: right;
     background-color: black;
