@@ -7,12 +7,10 @@ body {
   font-family: font;
   src: url(/fonts/Roboto-Medium.ttf);
 }
-
 @font-face {
   font-family: italic;
   src: url(/fonts/Roboto-BoldItalic.ttf);
 }
-
 @font-face {
   font-family: bold;
   src: url(/fonts/Roboto-Bold.ttf);
@@ -21,11 +19,9 @@ body {
 p, h1 {
     margin: 0;
 }
-
 h2 {
     font-size: 1.5rem;
 }
-
 a {
     color: black;
     text-decoration: none;
@@ -35,13 +31,11 @@ a:hover {
     cursor: pointer;
 }
 
-.body {
-    text-align: center;
-    margin: auto;
-    overflow: hidden;
-    width: 100%;
-}
 
+.body {
+    width: 100%;
+    overflow: hidden;
+}
 
 
 .indexImg {
@@ -50,7 +44,7 @@ a:hover {
     margin-bottom: 0;
 }
 .about {
-    display: inline-block;
+    display: block;
     text-align: left;
     margin-bottom: 32px;
 }
@@ -75,9 +69,9 @@ a:hover {
     font-size: 1.5rem;
     display: inline-block;
 }
+
 .foot {
     float: right;
-    margin: 8px 0;
 }
 
 .dropdown {
@@ -96,12 +90,13 @@ viewport height is less than viewport width.
     }
 
    .indexImg {
+        display: block;
         width: 50%;
         float: left;
         margin-bottom: 16px;
     }
     .about {
-        display: inline-block;
+        display: block;
         width: 40%;
         text-align: right;
         vertical-align: top;
