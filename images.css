@@ -9,6 +9,11 @@ body {
 }
 
 @font-face {
+  font-family: italic;
+  src: url(/fonts/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
   font-family: bold;
   src: url(/fonts/Roboto-Bold.ttf);
 }
@@ -38,10 +43,14 @@ a:hover {
 .head {
     position: sticky;
     top: 0px;
-
-    padding-top: 0px;
-    margin: 16px 0;
     z-index: 1;
+
+    padding-top: 0;
+    margin: 16px 0;
+
+    background-color: rgb(230, 230, 230);
+    border-style: solid;
+    border-width: 1px;
 }
 .head h1 {
     font-family: bold;
@@ -88,11 +97,14 @@ viewport height is less than viewport width.
     }
 
     .head {
-            width: 100%;
-            margin: 8px auto, 16px, auto;
+        width: 100%;
+        margin: 8px auto, 16px, auto;
+
+        background-color: transparent;
+        border: none;
     }
     .head h1 {
-        font-family: bold;
+        font-family: italic;
         font-size: 5em;
         display: block;
     }
