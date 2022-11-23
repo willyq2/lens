@@ -54,7 +54,8 @@ $(document).ready(function () {
                 'opacity': 1
             });
 
-            $(".name").show();
+            show($(".name")[0]);
+            show($(".name")[1]);
         }
     });
 

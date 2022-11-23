@@ -1,21 +1,23 @@
 body {
     font-family: font;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
 }
 
 @font-face {
   font-family: font;
   src: url(/fonts/Roboto-Medium.ttf);
 }
-
 @font-face {
   font-family: italic;
   src: url(/fonts/Roboto-BoldItalic.ttf);
 }
-
 @font-face {
   font-family: bold;
   src: url(/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: light;
+  src: url(/fonts/Roboto-Light.ttf);
 }
 
 p, h1 {
@@ -48,7 +50,7 @@ a:hover {
     padding-top: 0;
     margin: 16px 0;
 
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
     border-style: solid;
     border-width: 1px;
 }
@@ -59,26 +61,36 @@ a:hover {
 }
 .foot {
     float: right;
+    margin-top: 32px;
 }
 
 
 .dropdown {
     float: right;
     background-color: black;
-    color: rgb(230, 230, 230);
+    color: rgb(225, 225, 225);
 }
 
 img {
     display: block;
     width: 100%;
     margin-bottom: 8px;
+
+    vertical-align: top;
+}
+.group {
+    margin-bottom: 8px;
+}
+.ungroup {
+    margin-bottom: 32px;
 }
 
 video {
     width: 100%;
 }
 .description {
-    margin: 8px 0 32px 0;
+    margin: 8px 0 64px 0;
+    font-family: light;
 }
 
 /*
@@ -106,6 +118,10 @@ viewport height is less than viewport width.
         font-family: italic;
         font-size: 5em;
         display: block;
+    }
+    .foot {
+        float: right;
+        margin-top: 64px;
     }
 
     .dropdown {
@@ -135,7 +151,11 @@ viewport height is less than viewport width.
         margin-bottom: 8px;
     }
     .ungroup {
-        margin-bottom: 32px;
+        margin-bottom: 64px;
+    }
+
+    .description {
+        margin: 8px 0 128px 0;
     }
 }
 
@@ -156,7 +176,7 @@ Full page navigation overlay and content.
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
 }
 .closebtn {
     position: fixed;
@@ -174,12 +194,14 @@ Full page navigation overlay and content.
     font-family: bold;
 }
 
-.outline {
+/*
+.ob {
     border-style: solid;
     border-width: 1px;
 }
-.outline-w {
+.ow {
     border-style: solid;
     border-width: 1px;
     color: white;
 }
+*/

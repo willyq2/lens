@@ -1,6 +1,6 @@
 body {
     font-family: font;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
 }
 
 @font-face {
@@ -14,6 +14,10 @@ body {
 @font-face {
   font-family: bold;
   src: url(/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: light;
+  src: url(/fonts/Roboto-Light.ttf);
 }
 
 p, h1 {
@@ -46,7 +50,6 @@ a:hover {
 .about {
     display: block;
     text-align: left;
-    margin-bottom: 32px;
 }
 .nav {
     display: none;
@@ -60,7 +63,7 @@ a:hover {
     padding-top: 0;
     margin: 16px 0;
 
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
     border-style: solid;
     border-width: 1px;
 }
@@ -72,12 +75,13 @@ a:hover {
 
 .foot {
     float: right;
+    margin-top: 32px;
 }
 
 .dropdown {
     float: right;
     background-color: black;
-    color: rgb(230, 230, 230);
+    color: rgb(225, 225, 225);
 }
 
 /*
@@ -93,7 +97,6 @@ viewport height is less than viewport width.
         display: block;
         width: 50%;
         float: left;
-        margin-bottom: 16px;
     }
     .about {
         display: block;
@@ -101,7 +104,7 @@ viewport height is less than viewport width.
         text-align: right;
         vertical-align: top;
         float: right;
-        min-width: 227px;
+        min-width: 220px;
         margin-bottom: 0;
     }
     .nav {
@@ -120,6 +123,10 @@ viewport height is less than viewport width.
         font-family: italic;
         font-size: 5em;
         display: block;
+    }
+    .foot {
+        float: right;
+        margin-top: 64px;
     }
 
     .dropdown {
@@ -148,7 +155,7 @@ Full page navigation overlay and content.
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
 }
 .closebtn {
     position: fixed;
@@ -166,8 +173,9 @@ Full page navigation overlay and content.
     font-family: bold;
 }
 
-
-.outline {
+/*
+.o {
     border-style: solid;
     border-width: 1px;
 }
+*/
