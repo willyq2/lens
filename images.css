@@ -148,6 +148,9 @@ Full page navigation overlay and content.
 }
 .overlay {
     position: fixed;
+    justify-content: center;
+    align-items: center;
+
     height: 100%;
     width: 100%;
     top: 0;
@@ -158,22 +161,17 @@ Full page navigation overlay and content.
 .closebtn {
     position: fixed;
     margin: 0;
-    top: 25px;
+    top: 5px;
     right: 25px;
     font-size: 4rem;
 }
 .overlay_nav {
-    height: 80%;
-    margin-top: 10%;
-}
-.overlay_nav a {
     display: flex;
-    height: 20%;
-    align-items: center;
-    justify-content: center;
-}
-.closebtn:hover {
-    cursor:pointer;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 50%;
+    font-family: bold;
 }
 
 .outline {

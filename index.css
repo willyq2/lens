@@ -140,6 +140,9 @@ Full page navigation overlay and content.
 }
 .overlay {
     position: fixed;
+    justify-content: center;
+    align-items: center;
+
     height: 100%;
     width: 100%;
     top: 0;
@@ -155,15 +158,12 @@ Full page navigation overlay and content.
     font-size: 4rem;
 }
 .overlay_nav {
-    height: 80%;
-    margin-top: 10%;
-    font-family: bold;
-}
-.overlay_nav a {
     display: flex;
-    height: 20%;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 50%;
+    font-family: bold;
 }
 
 

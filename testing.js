@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("full_page_nav").style.display = "block";
+    document.getElementById("full_page_nav").style.display = "flex";
 }
 
 function closeNav() {
