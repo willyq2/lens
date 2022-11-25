@@ -3,6 +3,7 @@ body {
     background-color: rgb(225, 225, 225);
 }
 
+
 @font-face {
   font-family: font;
   src: url(/fonts/Roboto-Medium.ttf);
@@ -20,10 +21,10 @@ body {
   src: url(/fonts/Roboto-Light.ttf);
 }
 
+
 p, h1 {
     margin: 0;
 }
-
 a {
     color: black;
     text-decoration: none;
@@ -32,7 +33,6 @@ a:hover {
     color: white;
     cursor:pointer;
 }
-
 .body {
     width: 100%;
     margin: auto;
@@ -47,7 +47,6 @@ a:hover {
     top: 0px;
     z-index: 1;
 
-    padding-top: 0;
     margin: 16px 0;
 
     background-color: rgb(225, 225, 225);
@@ -63,26 +62,20 @@ a:hover {
     float: right;
     margin-top: 32px;
 }
-
-
 .dropdown {
     float: right;
     background-color: black;
     color: rgb(225, 225, 225);
 }
 
+
 img {
     display: block;
     width: 100%;
-    margin-bottom: 8px;
-
-    vertical-align: top;
-}
-.group {
-    margin-bottom: 8px;
+    margin-bottom: 32px;
 }
 .ungroup {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 
 video {
@@ -93,6 +86,8 @@ video {
     font-family: light;
 }
 
+
+
 /*
 viewport height is less than viewport width.
 */
@@ -102,14 +97,11 @@ viewport height is less than viewport width.
         position: relative;
         bottom: 50px;
     }
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
+
 
     .head {
         width: 100%;
-        margin: 8px auto, 16px, auto;
+        margin: 8px auto 16px auto;
 
         background-color: transparent;
         border: none;
@@ -123,14 +115,19 @@ viewport height is less than viewport width.
         float: right;
         margin-top: 64px;
     }
-
     .dropdown {
         display: none;
     }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     #full_page_nav {
         display: none !important;
     }
+
 
     img {
         display: inline-block;
@@ -143,16 +140,17 @@ viewport height is less than viewport width.
         width: 33%;
     }
 
-    .flex {
-        display: flex;
-        justify-content: space-between;
-    }
     .group {
-        margin-bottom: 8px;
+        margin-bottom: 32px;
     }
     .ungroup {
         margin-bottom: 64px;
     }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     .description {
         margin: 8px 0 128px 0;
@@ -193,15 +191,3 @@ Full page navigation overlay and content.
     height: 50%;
     font-family: bold;
 }
-
-/*
-.ob {
-    border-style: solid;
-    border-width: 1px;
-}
-.ow {
-    border-style: solid;
-    border-width: 1px;
-    color: white;
-}
-*/

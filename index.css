@@ -3,6 +3,7 @@ body {
     background-color: rgb(225, 225, 225);
 }
 
+
 @font-face {
   font-family: font;
   src: url(/fonts/Roboto-Medium.ttf);
@@ -20,6 +21,7 @@ body {
   src: url(/fonts/Roboto-Light.ttf);
 }
 
+
 p, h1 {
     margin: 0;
 }
@@ -34,8 +36,6 @@ a:hover {
     color: white;
     cursor: pointer;
 }
-
-
 .body {
     width: 100%;
     overflow: hidden;
@@ -51,16 +51,16 @@ a:hover {
     display: block;
     text-align: left;
 }
+
+
 .nav {
     display: none;
 }
-
 .head {
     position: sticky;
     top: 0px;
     z-index: 1;
 
-    padding-top: 0;
     margin: 16px 0;
 
     background-color: rgb(225, 225, 225);
@@ -72,26 +72,25 @@ a:hover {
     font-size: 1.5rem;
     display: inline-block;
 }
-
 .foot {
     float: right;
     margin-top: 32px;
 }
-
 .dropdown {
     float: right;
     background-color: black;
     color: rgb(225, 225, 225);
 }
 
-/*
-viewport height is less than viewport width.
-*/
+
+
+/* viewport height is less than viewport width. */
 @media all and (max-height: 100vw) {
     .body {
         position: relative;
         bottom: 50px;
     }
+
 
    .indexImg {
         display: block;
@@ -107,14 +106,11 @@ viewport height is less than viewport width.
         min-width: 220px;
         margin-bottom: 0;
     }
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
+
 
     .head {
         width: 100%;
-        margin: 8px auto, 16px, auto;
+        margin: 8px auto 16px auto;
 
         background-color: transparent;
         border: none;
@@ -128,9 +124,12 @@ viewport height is less than viewport width.
         float: right;
         margin-top: 64px;
     }
-
     .dropdown {
         display: none;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
     }
 
     #full_page_nav {
@@ -172,10 +171,3 @@ Full page navigation overlay and content.
     height: 50%;
     font-family: bold;
 }
-
-/*
-.o {
-    border-style: solid;
-    border-width: 1px;
-}
-*/
