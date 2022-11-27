@@ -80,6 +80,8 @@ img {
 
 video {
     width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 .description {
     margin: 8px 0 64px 0;
@@ -190,4 +192,9 @@ Full page navigation overlay and content.
 
     height: 50%;
     font-family: bold;
+}
+
+.o-b {
+    border: 1px solid black;
+    box-sizing: border-box;
 }
