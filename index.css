@@ -46,6 +46,9 @@ a:hover {
     display: block;
     width: 100%;
     margin-bottom: 0;
+
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 .about {
     display: block;
