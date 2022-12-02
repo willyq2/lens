@@ -1,6 +1,7 @@
 body {
     font-family: font;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(205, 205, 205);
+    color: white;
 }
 
 
@@ -49,9 +50,8 @@ a:hover {
 
     margin: 16px 0;
 
-    background-color: rgb(225, 225, 225);
-    border-style: solid;
-    border-width: 1px;
+    background-color: rgb(205, 205, 205);
+    border: black solid 1px;
 }
 .head h1 {
     font-family: bold;
@@ -65,7 +65,7 @@ a:hover {
 .dropdown {
     float: right;
     background-color: black;
-    color: rgb(225, 225, 225);
+    color: rgb(205, 205, 205);
 }
 
 
@@ -74,14 +74,18 @@ img {
     width: 100%;
     margin-bottom: 8px;
 }
+/*
+img:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
+*/
 .ungroup {
     margin-bottom: 64px;
 }
 
 video {
     width: 100%;
-    border: 1px solid black;
-    box-sizing: border-box;
 }
 .description {
     margin: 8px 0 64px 0;
@@ -176,7 +180,7 @@ Full page navigation overlay and content.
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(205, 205, 205);
 }
 .closebtn {
     position: fixed;
@@ -192,6 +196,26 @@ Full page navigation overlay and content.
 
     height: 50%;
     font-family: bold;
+}
+
+.bulletin {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(205, 205, 205);
+}
+.closebtn-2 {
+    position: fixed;
+    margin: 0;
+    top: 5px;
+    right: 25px;
+    font-size: 4rem;
 }
 
 .o-b {
