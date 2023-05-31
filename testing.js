@@ -63,23 +63,3 @@ $(document).ready(function () {
     });
 
 });
-
-/*
-$(document).ready(function () {
-    hide($('.bulletin')[0]);
-
-    $('img').click(function() {
-
-        $('#full_page_nav').css('display', 'flex');
-            alert("it works!");
-            show($('.bulletin')[0]);
-    });
-});
-
-function closeNav() {
-    document.getElementById("full_page_nav").style.display = "none";
-    $(document).ready(function () {
-        $('body').css('overflow', 'auto');
-    });
-}
-*/
