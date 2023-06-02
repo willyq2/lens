@@ -1,6 +1,6 @@
 body {
     font-family: font;
-    background-color: rgb(250, 249, 246);
+    background-color: white;
 }
 
 
@@ -10,6 +10,14 @@ body {
 }
 @font-face {
   font-family: italic;
+  src: url(/fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: mediumItalic;
+  src: url(/fonts/Roboto-MediumItalic.ttf);
+}
+@font-face {
+  font-family: boldItalic;
   src: url(/fonts/Roboto-BoldItalic.ttf);
 }
 @font-face {
@@ -33,7 +41,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: white;
+    font-family: mediumItalic;
     cursor: pointer;
 }
 .body {
@@ -65,7 +73,7 @@ a:hover {
 
     margin: 16px 0;
 
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(250, 249, 246);
     border: black solid 1px;
 }
 .head h1 {
@@ -80,7 +88,7 @@ a:hover {
 .dropdown {
     float: right;
     background-color: black;
-    color: rgb(205, 205, 205);
+    color: rgb(250, 249, 246);
 }
 
 
@@ -117,7 +125,7 @@ a:hover {
         border: none;
     }
     .head h1 {
-        font-family: italic;
+        font-family: bold;
         font-size: 5em;
         display: block;
     }

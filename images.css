@@ -1,6 +1,6 @@
 body {
     font-family: font;
-    background-color: rgb(205, 205, 205);
+    background-color: white;
 }
 
 
@@ -10,6 +10,14 @@ body {
 }
 @font-face {
   font-family: italic;
+  src: url(/fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: mediumItalic;
+  src: url(/fonts/Roboto-MediumItalic.ttf);
+}
+@font-face {
+  font-family: boldItalic;
   src: url(/fonts/Roboto-BoldItalic.ttf);
 }
 @font-face {
@@ -30,8 +38,8 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: white;
-    cursor:pointer;
+    font-family: mediumItalic;
+    cursor: pointer;
 }
 .body {
     width: 100%;
@@ -112,7 +120,7 @@ viewport height is less than viewport width.
         border: none;
     }
     .head h1 {
-        font-family: italic;
+        font-family: bold;
         font-size: 5em;
         display: block;
     }
