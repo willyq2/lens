@@ -38,7 +38,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    font-family: mediumItalic;
+    text-decoration: underline;
     cursor: pointer;
 }
 .body {
@@ -57,7 +57,7 @@ a:hover {
 
     margin: 16px 0;
 
-    background-color: rgb(205, 205, 205);
+    background-color: white;
     border: black solid 1px;
 }
 .head h1 {
@@ -72,7 +72,7 @@ a:hover {
 .dropdown {
     float: right;
     background-color: black;
-    color: rgb(205, 205, 205);
+    color: white;
 }
 
 
@@ -187,7 +187,7 @@ Full page navigation overlay and content.
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgb(205, 205, 205);
+    background-color: white;
 }
 .closebtn {
     position: fixed;
@@ -203,29 +203,4 @@ Full page navigation overlay and content.
 
     height: 50%;
     font-family: bold;
-}
-
-.bulletin {
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: rgb(205, 205, 205);
-}
-.closebtn-2 {
-    position: fixed;
-    margin: 0;
-    top: 5px;
-    right: 25px;
-    font-size: 4rem;
-}
-
-.o-b {
-    border: 1px solid black;
-    box-sizing: border-box;
 }
